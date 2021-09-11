@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de afazeres</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- corpo (body) do projeto-->
+
+<body>
+    <div id="tasks-container">
+        <!-- tasks-container INICIO -->
+
+        <!-- tasks-header INICIO -->
+        <div id="tasks-header">
+            <h2>Anote sua próxima tarefa:</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-title" placeholder="O que você pretende realizar?">
+                <button id="add-btn" type="submit">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </form>
+        </div>
+        <!-- tasks-header FIM -->
+
+        <!-- tasks-list-container INICIO -->
+        <div id="tasks-list-container">
+            <h2>Estas são as suas tarefas:</h2>
+            <ul id="task-list">
+                <li class="task-box template hide">
+                    <span class="task-title"></span>
+                    <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+        <!-- tasks-list-container FIM -->
+
+    </div>
+    <!-- tasks-container FIM -->
+
+    <!-- link para o JavaScript abaixo-->
+    <script src="script/script.js"></script>
+    <!-- link para o JavaScript acima-->
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

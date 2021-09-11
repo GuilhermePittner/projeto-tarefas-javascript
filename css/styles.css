@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #E65763, #34073D);
+    color: #FFF;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#tasks-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tasks-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid #34073D;
+    background: #FFF;
+    color: #34073D;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#add-task-form input::placeholder{
+   color: #34073D;
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#add-btn{
+    position: absolute;
+    background: #FFF;
+    border: 1px solid #34073D;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+    padding-top: 3px;
+}
+
+#add-btn:hover{
+    background-color: #34073D;
+    color: #FFF;
+}
+
+ion-icon{
+    font-size: 25px;
+}
+
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #34073D;
+    background-color: #FFF;
+    color: #34073D;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#task-list li span{
+    font-size: 18px;
+}
+
+#task-list ion-icon{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    color: #FFF;
+    background-color: #09E01B;
+}
+
+.remove-btn{
+    right: 0;
+}
+
+.remove-btn:hover{
+    color: #FFF;
+    background-color: #EB0927;
+}
+
+/* estes comandos abaixo serão usados no JavaScript */
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: #34073D;
+    color: #FFF;
+    text-decoration: line-through;
+}
+
+/* estes comandos acima serão usados no JavaScript */
+
+@media (max-width: 800px){
+    #tasks-container{
+        width: 90%;
+    }
+}
